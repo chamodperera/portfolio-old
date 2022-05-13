@@ -1,0 +1,17 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,400&display=swap');
+
+*{
+  font-family: 'Poppins';
+}
+body{
+  background-color: #032D30;
+}
+.nav{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
