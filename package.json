@@ -1,7 +1,7 @@
 {
   "name": "personal_portfolio",
   "version": "0.1.0",
-  "homepage": "https://chamodperera.github.io/personal-portfolio/",
+  "homepage": "https://chamodperera.github.io/personal-portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
