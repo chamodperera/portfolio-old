@@ -1,0 +1,124 @@
+.container{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    // background-color: orange;
+
+    .title{
+        font-size: 1.6em;
+        font-weight: 600;
+        color: #ffffff;
+        align-self: center;
+    }
+
+    .wrapper{
+        display: flex;
+        
+        flex-wrap: wrap;
+
+        // .illustration{
+        //     display: none;
+        // }
+    }
+}
+.card{
+    flex-basis: 20%;
+    justify-content: center;
+    display: flex;
+
+    .item{
+        align-self: center;
+        display: flex;
+        margin: 20px;
+        flex-direction: column;
+        flex: 0 1 24%;
+        background-color: black;
+        border-radius: 1.5em;
+        outline:0.3em solid;
+        max-width: 180px;
+        outline-color: #E9E5D4;
+        align-self: center;
+        align-items: center;
+        
+        
+
+        .skillimg{
+            
+            margin: 0 20px 0 20px;
+            max-width: auto;
+            object-fit: contain;
+            align-self: center;
+        }
+
+        .skillTitle{
+            color: #FFFFFF;
+            font-size: 1.3em;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+    }
+}
+//desktop
+@media only screen and (max-width: 576px) { 
+    
+    .wrapper{
+        justify-content: space-around;
+    }
+
+    .skillimg{
+        max-height: 100px;
+        max-width: auto;
+
+    }
+}
+//large screens
+@media only screen and (min-width: 1200px) {
+    .illustration{
+        display: block;
+        min-height: 100%;
+        min-width: 100px;
+        background-color: red;
+    }
+}
+
+//mobile
+@media only screen and (min-width: 576px) {
+    .title{
+        margin-bottom: 20px;
+    }
+
+    .wrapper{
+        justify-content: flex-start;
+    }
+
+    .skillimg{
+        max-height: 150px;
+        max-width: auto;
+    }
+   //animations
+    .item:hover {
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+      }
+      
+      @keyframes shake {
+        10%, 90% {
+          transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+          transform: translate3d(2px, 0, 0);
+        }
+      
+        30%, 50%, 70% {
+          transform: translate3d(-4px, 0, 0);
+        }
+      
+        40%, 60% {
+          transform: translate3d(4px, 0, 0);
+        }
+      }
+
+}
