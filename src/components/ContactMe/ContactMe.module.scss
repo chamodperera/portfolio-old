@@ -50,19 +50,15 @@
         background-color: #E9E5D4;
         border-radius: 1em;
         justify-content:space-evenly;
-        // min-width: fit-content;
+        min-width: fit-content;
        
         
-        img{
-            height: 3.5em;
-            width: auto;
-        }
-
+        
         span{
             align-self: center;
             margin-left: 10px;
             margin-right: 10px;
-            font-size: 1.2em;
+            // font-size: 1.2em;
             font-weight: 600;
             color: #032D30; 
         }
@@ -79,13 +75,39 @@
             width: auto;
         }
     }
+
+    .card{
+        img{
+            height: 3em;
+            width: auto;
+        }
+
+        span{
+            font-size: 1em;
+
+        }
+    }
  }
 
  @media (min-width: 575.98px) {
+
     .illustration{
         img{
             height: 30em;
             width: auto;
         }
+    }
+
+    .card{
+        img{
+            height: 3.5em;
+            width: auto;
+        }
+
+        span{
+            font-size: 1.2em;
+        }
+
+
     }
  }
