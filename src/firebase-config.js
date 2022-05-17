@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from '@firebase/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCu3EH0-2fEurIGlhLEg_UZFHXdsOXcOGM",
-    authDomain: "personal-portfolio-f1e9f.firebaseapp.com",
+    apiKey: process.env.REACT_APP_APIKEY,
+    authDomain: process.env.REACT_APP_AUTHDOMAIN,
     projectId: "personal-portfolio-f1e9f",
-    storageBucket: "personal-portfolio-f1e9f.appspot.com",
-    messagingSenderId: "1068907648967",
-    appId: "1:1068907648967:web:fca687a1963fc9ab276be2",
-    measurementId: "G-RKBW4FMZ16"
+    storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+    appId: process.env.APPID,
+    measurementId: process.env.MEASUREMENTID
   };
 
 const app = initializeApp(firebaseConfig);
