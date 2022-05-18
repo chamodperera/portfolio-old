@@ -2,7 +2,8 @@
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    // background-color: orange;
+    // border: 1px solid;
+    margin-bottom: 50px;
 
     .title{
         font-size: 1.6em;
@@ -13,18 +14,20 @@
 
     .wrapper{
         display: flex;
-        
+        // border: 1px solid;
         flex-wrap: wrap;
+        // justify-content: center;
+        // align-items: center;
 
-        // .illustration{
-        //     display: none;
-        // }
+        
     }
 }
 .card{
-    flex-basis: 20%;
+    flex-basis: 21%;
     justify-content: center;
     display: flex;
+    margin-bottom: 40px;
+    // border: 1px solid;
 
     .item{
         align-self: center;
@@ -58,6 +61,15 @@
         }
     }
 }
+
+.illustration{
+    display: none;
+    img{
+        height: 20px;
+        width: auto;
+        transform: scale(25) translate(25px,10px);
+    }
+}
 //desktop
 @media only screen and (max-width: 576px) { 
     
@@ -72,14 +84,14 @@
     }
 }
 //large screens
-@media only screen and (min-width: 1200px) {
-    .illustration{
-        display: block;
-        min-height: 100%;
-        min-width: 100px;
-        background-color: red;
-    }
-}
+// @media only screen and (min-width: 1200px) {
+//     .illustration{
+//         display: block;
+//         min-height: 100%;
+//         min-width: 100px;
+//         background-color: red;
+//     }
+// }
 
 //mobile
 @media only screen and (min-width: 576px) {
