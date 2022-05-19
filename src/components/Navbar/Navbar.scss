@@ -1,3 +1,6 @@
+.navbar{
+  cursor: default;
+}
 //pc
 @media (min-width: 576px) {  
   .nav-mobile{
@@ -49,10 +52,9 @@
       }
     }
 
-    .item-selected{
+    .itemSelected{
       color: #D9D9D9;
       background-color: #D47239;
-      
     }
 
     .areafill{
@@ -78,7 +80,8 @@
   .nav-mobile{
     display: flex;
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 10px;
+    margin-top: 8px;
   
     .menu{
       list-style-type: none;

@@ -12,9 +12,10 @@ function App() {
         <Navbar/>
       </div>
       <div className='content'>
-        <AboutMe/>
-        <Skills/>
-        <ContactMe/>
+        <section id='AboutMe'><AboutMe/></section>
+        <section id='Skills'><Skills/></section>
+        <section id='Contacts'><ContactMe/></section>
+        
         
         
       </div>
