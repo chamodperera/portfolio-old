@@ -2,6 +2,7 @@ import './App.scss';
 import AboutMe from './components/AboutMe/AboutMe';
 import ContactMe from './components/ContactMe/ContactMe';
 import Navbar from './components/Navbar/Navbar';
+import Projects from './components/Projects/projects';
 import Skills from './components/Skills/Skills';
 
 
@@ -14,6 +15,7 @@ function App() {
       <div className='content'>
         <section id='AboutMe'><AboutMe/></section>
         <section id='Skills'><Skills/></section>
+        <section id='Projects'><Projects/></section>
         <section id='Contacts'><ContactMe/></section>
         
         
