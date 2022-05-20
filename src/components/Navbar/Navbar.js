@@ -6,12 +6,14 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Link } from "react-scroll";
 import { useState } from 'react';
+import { useContext} from 'react';
+import State from '../../State.Context'
 
 
 
 const Navbar = () => {
     const [Section,changeSection] = useState('AboutMe')
-    const [Menu,triggerMenu] = useState(false)
+    const {Menu,triggerMenu} = useContext(State)
     useEffect(() => {
         const timer = setTimeout(() => {
             triggerMenu(false)
